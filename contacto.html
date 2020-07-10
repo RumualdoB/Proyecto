@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<meta name="viewport" content="width=divice-width, user-scalable=no, initial-scale=1.0,maximun-scale=1.0,minium-scale=1.0"></head>
+	<link rel="stylesheet" href="estilos.css">
+	<script src="validar.js"></script>
+<body>
+	<div class="contenedor"> 
+		<form action="guardarphp.php" method="POST" onsubmit="return validar();" class="form">
+			<div class="form-header">
+				<h1 class="form-title">Formulario<span> de registro</span></h1>
+			<label for="nombre" class="form-label">Nombre:</label>
+			<input type="text" id="nombre" class="form-input" >
+
+			<label for="apellido" class="form-label">Apellido:</label>
+			<input type="text" id="apellido" class="form-input" >
+
+			<label for="sexo" class="form-label">Sexo:</label>
+			<input type="radio" name="sexo" id="idMasculino" >
+			<label for="masculino">Hombre</label>
+			<br>
+			<input type="radio" name="sexo" id="idfemenino" >
+			<label for="femenino">Mujer</label>
+
+			<label for="correo" class="form-label">Correo Electronico:</label>
+			<input type="email" id="correo" class="form-input" >
+
+			<input type="submit" class="form-submit" >
+			<p class="form-link">¿No tienes cuenta?<a href="#">Ingresa aqui</a></p>
+
+			</div>
+			
+		</form>
+	</div>
+
+</body>
+</html>
